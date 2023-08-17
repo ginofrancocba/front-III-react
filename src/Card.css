@@ -1,0 +1,21 @@
+
+
+.card {
+
+    border: 2px solid #81a150;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 3em;
+  }
+
+.card h3 {
+    background-color: #7d4343;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid #ccb8b8;
+    border-radius: 8px;
+    height: 2em;
+
+  }

@@ -1,5 +1,7 @@
 import { useState } from "react";
-function Form({onAddPatient}){
+import './Form.css';
+
+function Form({onAddMusic}){
 
     const [nombre,setNombre]=useState("");
     const [apellido,setApellido]=useState("");
@@ -7,23 +9,34 @@ function Form({onAddPatient}){
     const handleSubmit = (e)=>{
         e.preventDefault();
     
-        if(nombre && apellido){
-            onAddPatient({nombre,apellido});
+        if(nombre.trim().length >= 3 && apellido.trim().length >= 3 && apellido.length <= 6) {
+            onAddMusic( { nombre, apellido } );
             setNombre("");
             setApellido("");
+        } else {
+            alert("!!! Por favor chequea que la información sea correcta !!!");
         }
-    }
+    };
 
     return (
 
-    <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Ingrese su nombre" value={nombre} onChange={(e)=>setNombre(e.target.value)} />
-        <input type="text" placeholder="Ingrese su Apellido" value={apellido} onChange={(e)=>setApellido(e.target.value)} />
+    <Form onSubmit={handleSubmit}>
+        <input 
+        type="text" 
+        placeholder="Ingrese nombre" 
+        value={nombre} 
+        onChange={(e) => setNombre(e.target.value)} 
+        />
+        <input 
+        type="text" 
+        placeholder="Ingrese Apellido" 
+        value={apellido} 
+        onChange={(e) => setApellido(e.target.value)} 
+        />
         <button type="submit">Agregar músico</button>        
-    </form>
+    </Form>
     
-    )
-
+    );
 }
 
 export default Form;

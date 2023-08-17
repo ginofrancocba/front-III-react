@@ -1,21 +1,22 @@
 import { useState } from 'react';
 import Form from './Form';
-import Turnos from './Turnos';
+import Card from './Card';
 import './App.css';
 
+
 function App() {
-  const [pacientes, setPacientes] = useState([]);
-  const addPatient = (patient) => {
-    setPacientes([...pacientes, patient]);
+  const [artistas, setArtistas] = useState([]);
+  const addArtista = (artista) => {
+    setArtistas([...artistas, artista]);
   };
 
   return (
     <div className="App">
       <h1>Ingrese su músico favorito</h1>
-      <Form onAddPatient={addPatient} />
-      <Turnos pacientes={pacientes} />
+      <Form onAddMusic={addArtista} />
+      <Card artistas={artistas} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
