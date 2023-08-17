@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css';
+import './Cards.css';
 
 function Cards({ artistas }) {
   return (
