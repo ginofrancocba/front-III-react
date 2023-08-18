@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function Form({onAddMusic}){
 
@@ -19,7 +19,7 @@ function Form({onAddMusic}){
 
     return (
 
-    <Form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <input 
         type="text" 
         placeholder="Ingrese nombre" 
@@ -33,7 +33,7 @@ function Form({onAddMusic}){
         onChange={(e) => setApellido(e.target.value)} 
         />
         <button type="submit">Agregar músico</button>        
-    </Form>
+    </form>
     
     );
 }
