@@ -1,0 +1,17 @@
+
+.form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 3em;
+    margin: 3em;
+
+}
+
+.input {
+    width: calc(50% - (4 * var(--space)));
+}
+

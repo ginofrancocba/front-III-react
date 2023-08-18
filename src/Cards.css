@@ -1,5 +1,4 @@
 
-
 .card {
 
     border: 2px solid #81a150;
@@ -7,6 +6,7 @@
     margin-bottom: 10px;
     border-radius: 8px;
     height: 3em;
+    background-color: rgb(38, 54, 54);
   }
 
 .card h3 {
