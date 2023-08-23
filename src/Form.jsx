@@ -15,7 +15,7 @@ function Form({onAddMusic}){
             setNombre("");
             setApellido("");
         } else {
-            alert("!!! Por favor chequea que la información sea correcta !!!");
+            alert("!!! Por favor chequea que la información sea la correcta !!!");
         }
     };
 
